@@ -1,0 +1,6 @@
+framework module Pods_MyGraine {
+  umbrella header "Pods-MyGraine-umbrella.h"
+
+  export *
+  module * { export * }
+}

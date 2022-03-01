@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9EDD481A596B879A3890443 /* Pods_MyGraine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */; };
 		F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9827CE9D18002CC31F /* MyGraineApp.swift */; };
 		F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9A27CE9D18002CC31F /* ContentView.swift */; };
 		F3246C9D27CE9D1C002CC31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9C27CE9D1C002CC31F /* Assets.xcassets */; };
@@ -33,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.debug.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.debug.xcconfig"; sourceTree = "<group>"; };
+		2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGraine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.release.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.release.xcconfig"; sourceTree = "<group>"; };
 		F3246C9527CE9D18002CC31F /* MyGraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGraine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3246C9827CE9D18002CC31F /* MyGraineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineApp.swift; sourceTree = "<group>"; };
 		F3246C9A27CE9D18002CC31F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EDD481A596B879A3890443 /* Pods_MyGraine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EF79CCC0FC4DCA5CF9F00B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D21E8A6678B9496EFF50994E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */,
+				90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F3246C8C27CE9D18002CC31F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +102,8 @@
 				F3246CA927CE9D1C002CC31F /* MyGraineTests */,
 				F3246CB427CE9D1C002CC31F /* MyGraineUITests */,
 				F3246C9627CE9D18002CC31F /* Products */,
+				D21E8A6678B9496EFF50994E /* Pods */,
+				6EF79CCC0FC4DCA5CF9F00B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3246CBA27CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraine" */;
 			buildPhases = (
+				7418087CE61A70563EB015A7 /* [CP] Check Pods Manifest.lock */,
 				F3246C9127CE9D18002CC31F /* Sources */,
 				F3246C9227CE9D18002CC31F /* Frameworks */,
 				F3246C9327CE9D18002CC31F /* Resources */,
+				837AB98859E05E5B675A7249 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7418087CE61A70563EB015A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyGraine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837AB98859E05E5B675A7249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyGraine/Pods-MyGraine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyGraine/Pods-MyGraine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyGraine/Pods-MyGraine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3246C9127CE9D18002CC31F /* Sources */ = {
@@ -414,6 +483,7 @@
 		};
 		F3246CBB27CE9D1C002CC31F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +505,7 @@
 		};
 		F3246CBC27CE9D1C002CC31F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
