@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9827CE9D18002CC31F /* MyGraineApp.swift */; };
+		F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9A27CE9D18002CC31F /* ContentView.swift */; };
+		F3246C9D27CE9D1C002CC31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9C27CE9D1C002CC31F /* Assets.xcassets */; };
+		F3246CA027CE9D1C002CC31F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9F27CE9D1C002CC31F /* Preview Assets.xcassets */; };
+		F3246CAB27CE9D1C002CC31F /* MyGraineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */; };
+		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3246CA727CE9D1C002CC31F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3246C8D27CE9D18002CC31F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3246C9427CE9D18002CC31F;
+			remoteInfo = MyGraine;
+		};
+		F3246CB227CE9D1C002CC31F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3246C8D27CE9D18002CC31F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3246C9427CE9D18002CC31F;
+			remoteInfo = MyGraine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3246C9527CE9D18002CC31F /* MyGraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGraine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3246C9827CE9D18002CC31F /* MyGraineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineApp.swift; sourceTree = "<group>"; };
+		F3246C9A27CE9D18002CC31F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3246C9C27CE9D1C002CC31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3246C9F27CE9D1C002CC31F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3246CA127CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3246CA627CE9D1C002CC31F /* MyGraineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGraineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineTests.swift; sourceTree = "<group>"; };
+		F3246CAC27CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3246CB127CE9D1C002CC31F /* MyGraineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGraineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineUITests.swift; sourceTree = "<group>"; };
+		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3246C9227CE9D18002CC31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CA327CE9D1C002CC31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CAE27CE9D1C002CC31F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3246C8C27CE9D18002CC31F = {
+			isa = PBXGroup;
+			children = (
+				F3246C9727CE9D18002CC31F /* MyGraine */,
+				F3246CA927CE9D1C002CC31F /* MyGraineTests */,
+				F3246CB427CE9D1C002CC31F /* MyGraineUITests */,
+				F3246C9627CE9D18002CC31F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3246C9627CE9D18002CC31F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9527CE9D18002CC31F /* MyGraine.app */,
+				F3246CA627CE9D1C002CC31F /* MyGraineTests.xctest */,
+				F3246CB127CE9D1C002CC31F /* MyGraineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3246C9727CE9D18002CC31F /* MyGraine */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9827CE9D18002CC31F /* MyGraineApp.swift */,
+				F3246C9A27CE9D18002CC31F /* ContentView.swift */,
+				F3246C9C27CE9D1C002CC31F /* Assets.xcassets */,
+				F3246CA127CE9D1C002CC31F /* Info.plist */,
+				F3246C9E27CE9D1C002CC31F /* Preview Content */,
+			);
+			path = MyGraine;
+			sourceTree = "<group>";
+		};
+		F3246C9E27CE9D1C002CC31F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9F27CE9D1C002CC31F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3246CA927CE9D1C002CC31F /* MyGraineTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */,
+				F3246CAC27CE9D1C002CC31F /* Info.plist */,
+			);
+			path = MyGraineTests;
+			sourceTree = "<group>";
+		};
+		F3246CB427CE9D1C002CC31F /* MyGraineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */,
+				F3246CB727CE9D1C002CC31F /* Info.plist */,
+			);
+			path = MyGraineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3246C9427CE9D18002CC31F /* MyGraine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3246CBA27CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraine" */;
+			buildPhases = (
+				F3246C9127CE9D18002CC31F /* Sources */,
+				F3246C9227CE9D18002CC31F /* Frameworks */,
+				F3246C9327CE9D18002CC31F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGraine;
+			productName = MyGraine;
+			productReference = F3246C9527CE9D18002CC31F /* MyGraine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3246CA527CE9D1C002CC31F /* MyGraineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3246CBD27CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraineTests" */;
+			buildPhases = (
+				F3246CA227CE9D1C002CC31F /* Sources */,
+				F3246CA327CE9D1C002CC31F /* Frameworks */,
+				F3246CA427CE9D1C002CC31F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3246CA827CE9D1C002CC31F /* PBXTargetDependency */,
+			);
+			name = MyGraineTests;
+			productName = MyGraineTests;
+			productReference = F3246CA627CE9D1C002CC31F /* MyGraineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3246CB027CE9D1C002CC31F /* MyGraineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3246CC027CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraineUITests" */;
+			buildPhases = (
+				F3246CAD27CE9D1C002CC31F /* Sources */,
+				F3246CAE27CE9D1C002CC31F /* Frameworks */,
+				F3246CAF27CE9D1C002CC31F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3246CB327CE9D1C002CC31F /* PBXTargetDependency */,
+			);
+			name = MyGraineUITests;
+			productName = MyGraineUITests;
+			productReference = F3246CB127CE9D1C002CC31F /* MyGraineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3246C8D27CE9D18002CC31F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F3246C9427CE9D18002CC31F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F3246CA527CE9D1C002CC31F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F3246C9427CE9D18002CC31F;
+					};
+					F3246CB027CE9D1C002CC31F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F3246C9427CE9D18002CC31F;
+					};
+				};
+			};
+			buildConfigurationList = F3246C9027CE9D18002CC31F /* Build configuration list for PBXProject "MyGraine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3246C8C27CE9D18002CC31F;
+			productRefGroup = F3246C9627CE9D18002CC31F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3246C9427CE9D18002CC31F /* MyGraine */,
+				F3246CA527CE9D1C002CC31F /* MyGraineTests */,
+				F3246CB027CE9D1C002CC31F /* MyGraineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3246C9327CE9D18002CC31F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3246CA027CE9D1C002CC31F /* Preview Assets.xcassets in Resources */,
+				F3246C9D27CE9D1C002CC31F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CA427CE9D1C002CC31F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CAF27CE9D1C002CC31F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3246C9127CE9D18002CC31F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */,
+				F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CA227CE9D1C002CC31F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3246CAB27CE9D1C002CC31F /* MyGraineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3246CAD27CE9D1C002CC31F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3246CA827CE9D1C002CC31F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3246C9427CE9D18002CC31F /* MyGraine */;
+			targetProxy = F3246CA727CE9D1C002CC31F /* PBXContainerItemProxy */;
+		};
+		F3246CB327CE9D1C002CC31F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3246C9427CE9D18002CC31F /* MyGraine */;
+			targetProxy = F3246CB227CE9D1C002CC31F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F3246CB827CE9D1C002CC31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3246CB927CE9D1C002CC31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3246CBB27CE9D1C002CC31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyGraine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyGraine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3246CBC27CE9D1C002CC31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyGraine/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyGraine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3246CBE27CE9D1C002CC31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGraineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGraine.app/MyGraine";
+			};
+			name = Debug;
+		};
+		F3246CBF27CE9D1C002CC31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGraineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGraine.app/MyGraine";
+			};
+			name = Release;
+		};
+		F3246CC127CE9D1C002CC31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGraineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGraine;
+			};
+			name = Debug;
+		};
+		F3246CC227CE9D1C002CC31F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyGraineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "D-D-Dream.MyGraineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGraine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3246C9027CE9D18002CC31F /* Build configuration list for PBXProject "MyGraine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3246CB827CE9D1C002CC31F /* Debug */,
+				F3246CB927CE9D1C002CC31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3246CBA27CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3246CBB27CE9D1C002CC31F /* Debug */,
+				F3246CBC27CE9D1C002CC31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3246CBD27CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3246CBE27CE9D1C002CC31F /* Debug */,
+				F3246CBF27CE9D1C002CC31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3246CC027CE9D1C002CC31F /* Build configuration list for PBXNativeTarget "MyGraineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3246CC127CE9D1C002CC31F /* Debug */,
+				F3246CC227CE9D1C002CC31F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3246C8D27CE9D18002CC31F /* Project object */;
+}
