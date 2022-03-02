@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A9EDD481A596B879A3890443 /* Pods_MyGraine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */; };
+		AC3ED27827CFF7C900A4A5D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27727CFF7C900A4A5D5 /* LoginView.swift */; };
+		AC3ED27A27CFF7D100A4A5D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */; };
+		AC3ED27C27CFF7E800A4A5D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27B27CFF7E800A4A5D5 /* SettingsView.swift */; };
+		AC3ED27E27CFF7F000A4A5D5 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27D27CFF7F000A4A5D5 /* CalenderView.swift */; };
+		AC3ED28027CFF7FB00A4A5D5 /* FirebaseFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */; };
+		AC3ED28227CFF80400A4A5D5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */; };
 		F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9827CE9D18002CC31F /* MyGraineApp.swift */; };
 		F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9A27CE9D18002CC31F /* ContentView.swift */; };
 		F3246C9D27CE9D1C002CC31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9C27CE9D1C002CC31F /* Assets.xcassets */; };
@@ -38,6 +44,12 @@
 		010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.debug.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.debug.xcconfig"; sourceTree = "<group>"; };
 		2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGraine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.release.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.release.xcconfig"; sourceTree = "<group>"; };
+		AC3ED27727CFF7C900A4A5D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC3ED27B27CFF7E800A4A5D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC3ED27D27CFF7F000A4A5D5 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunctions.swift; sourceTree = "<group>"; };
+		AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		F3246C9527CE9D18002CC31F /* MyGraine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGraine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3246C9827CE9D18002CC31F /* MyGraineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineApp.swift; sourceTree = "<group>"; };
 		F3246C9A27CE9D18002CC31F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +99,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC3ED27527CFF7A800A4A5D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9827CE9D18002CC31F /* MyGraineApp.swift */,
+				AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */,
+				AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC3ED27627CFF7AD00A4A5D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9A27CE9D18002CC31F /* ContentView.swift */,
+				AC3ED27727CFF7C900A4A5D5 /* LoginView.swift */,
+				AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */,
+				AC3ED27B27CFF7E800A4A5D5 /* SettingsView.swift */,
+				AC3ED27D27CFF7F000A4A5D5 /* CalenderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D21E8A6678B9496EFF50994E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +155,8 @@
 		F3246C9727CE9D18002CC31F /* MyGraine */ = {
 			isa = PBXGroup;
 			children = (
-				F3246C9827CE9D18002CC31F /* MyGraineApp.swift */,
-				F3246C9A27CE9D18002CC31F /* ContentView.swift */,
+				AC3ED27627CFF7AD00A4A5D5 /* Views */,
+				AC3ED27527CFF7A800A4A5D5 /* Model */,
 				F3246C9C27CE9D1C002CC31F /* Assets.xcassets */,
 				F3246CA127CE9D1C002CC31F /* Info.plist */,
 				F3B05EEF27CFF517007C8F00 /* GoogleService-Info.plist */,
@@ -331,6 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3ED27C27CFF7E800A4A5D5 /* SettingsView.swift in Sources */,
+				AC3ED28027CFF7FB00A4A5D5 /* FirebaseFunctions.swift in Sources */,
+				AC3ED27827CFF7C900A4A5D5 /* LoginView.swift in Sources */,
+				AC3ED27E27CFF7F000A4A5D5 /* CalenderView.swift in Sources */,
+				AC3ED28227CFF80400A4A5D5 /* UserInfo.swift in Sources */,
+				AC3ED27A27CFF7D100A4A5D5 /* HomeView.swift in Sources */,
 				F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */,
 				F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */,
 			);
