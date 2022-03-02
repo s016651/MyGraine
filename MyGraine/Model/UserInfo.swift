@@ -12,7 +12,6 @@ class UserInfo : ObservableObject{
     var email : String
     var password : String
     @Published var loggedIn : Bool
-    @Published var image: UIImage = UIImage(named: "Unknown")!
     
     init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false) {
         self.name = name
