@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F3246CA027CE9D1C002CC31F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9F27CE9D1C002CC31F /* Preview Assets.xcassets */; };
 		F3246CAB27CE9D1C002CC31F /* MyGraineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */; };
 		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
+		F3B05EF027CFF517007C8F00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3B05EEF27CFF517007C8F00 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F3246CB127CE9D1C002CC31F /* MyGraineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGraineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineUITests.swift; sourceTree = "<group>"; };
 		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B05EEF27CFF517007C8F00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,6 @@
 				010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */,
 				90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +125,7 @@
 				F3246C9A27CE9D18002CC31F /* ContentView.swift */,
 				F3246C9C27CE9D1C002CC31F /* Assets.xcassets */,
 				F3246CA127CE9D1C002CC31F /* Info.plist */,
+				F3B05EEF27CFF517007C8F00 /* GoogleService-Info.plist */,
 				F3246C9E27CE9D1C002CC31F /* Preview Content */,
 			);
 			path = MyGraine;
@@ -269,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B05EF027CFF517007C8F00 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
