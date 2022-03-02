@@ -102,7 +102,6 @@
 		AC3ED27527CFF7A800A4A5D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F3246C9827CE9D18002CC31F /* MyGraineApp.swift */,
 				AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */,
 				AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */,
 			);
@@ -155,6 +154,7 @@
 		F3246C9727CE9D18002CC31F /* MyGraine */ = {
 			isa = PBXGroup;
 			children = (
+				F3246C9827CE9D18002CC31F /* MyGraineApp.swift */,
 				AC3ED27627CFF7AD00A4A5D5 /* Views */,
 				AC3ED27527CFF7A800A4A5D5 /* Model */,
 				F3246C9C27CE9D1C002CC31F /* Assets.xcassets */,
