@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class UserInfo : ObservableObject{
+class UserInfo : ObservableObject {
     var name : String
     var email : String
     var password : String

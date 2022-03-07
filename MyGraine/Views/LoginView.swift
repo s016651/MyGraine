@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         VStack{
+            HStack{
+                Image(systemName: "mail")
+                TextField("Email", text: $userInfo.email)
+            }
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                Text("Sign In")
+            })
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Text("Create Account With Email")
             })
         }
     }

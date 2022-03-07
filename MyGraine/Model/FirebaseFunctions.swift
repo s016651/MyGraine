@@ -24,15 +24,11 @@ struct FirebaseFunctions{
                 
                 
                //getting information from the user's document
-                let imageURL = document.get("image") as? String ?? ""
+              
                 userInfo.name = document.get ("name") as? String ?? ""
                 
                 
-                Storage.storage().reference(forURL: imageURL).getData(maxSize: 1 * 1024 * 1024) { data, _ in
-                    if let imageData = data{
-                        userInfo.image = UIImage (data : imageData) ?? UIImage (named : "user")!
-                    }
-                }
+               
             }
         }
     }

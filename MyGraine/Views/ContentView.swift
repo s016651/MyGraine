@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userInfo : UserInfo
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group{
+            if userInfo.loggedIn{
+                HomeView()
+            }
+            else {
+                LoginView()
+            }
+        }
     }
 }
 
