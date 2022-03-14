@@ -11,7 +11,7 @@ struct LoginView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         ZStack{
-            Rectangle().foregroundColor(Color.backGround)
+            Rectangle().foregroundColor(Color.backGroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 HStack{
@@ -30,29 +30,40 @@ struct LoginView: View {
                 }
                 .padding()
                 
-                Button(action: {}, label:{
-                    Text("Forgot Password")
-                })
-                    .foregroundColor(Color.buttonBackground)
+                Button("Forgot Password") {
+                    FirebaseFunctions.forgotPassword(email: userInfo.email) { success in
+                        
+                    }
+                }
+                .foregroundColor(Color.buttonText)
                 .padding()
                 Spacer()
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Sign In")
-                })
-                    .frame(width: UIScreen.main.bounds.width-100)
-                    .padding()
-                    .background(Color.buttonBackground)
-                    .foregroundColor(Color.buttonText)
-                    .cornerRadius(30)
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Create Account With Email")
-                })
-                    .frame(width: UIScreen.main.bounds.width-100)
-                    .padding()
-                    .background(Color.buttonBackground)
-                    .foregroundColor(Color.buttonText)
-                    .cornerRadius(30)
+                Button("Sign In"){
+                    FirebaseFunctions.login(email: userInfo.email, password: userInfo.password)
+                    { success in
+                        if success{
+                            userInfo.loggedIn = true
+                        }
+                    }
+                }
+                .frame(width: UIScreen.main.bounds.width-100)
+                .padding()
+                .background(Color.buttonBackground)
+                .foregroundColor(Color.buttonText)
+                .cornerRadius(30)
+                Button("Create Account With Email"){
+                    FirebaseFunctions.authenticate(email: userInfo.email, password: userInfo.password) {success in
+                        if success{
+                            userInfo.loggedIn = true
+                        }
+                    }
+                }
+                .frame(width: UIScreen.main.bounds.width-100)
+                .padding()
+                .background(Color.buttonBackground)
+                .foregroundColor(Color.buttonText)
+                .cornerRadius(30)
             }
         }
         
