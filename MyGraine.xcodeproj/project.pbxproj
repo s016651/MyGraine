@@ -21,7 +21,7 @@
 		F3246CA027CE9D1C002CC31F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9F27CE9D1C002CC31F /* Preview Assets.xcassets */; };
 		F3246CAB27CE9D1C002CC31F /* MyGraineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */; };
 		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
-		F3B911DC27DFAE1300ED0C34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3B911DB27DFAE1200ED0C34 /* GoogleService-Info.plist */; };
+		F3285F5027DFB39A00055604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		F3246CB127CE9D1C002CC31F /* MyGraineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGraineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineUITests.swift; sourceTree = "<group>"; };
 		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3B911DB27DFAE1200ED0C34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 				AC3ED27527CFF7A800A4A5D5 /* Model */,
 				F3246C9C27CE9D1C002CC31F /* Assets.xcassets */,
 				F3246CA127CE9D1C002CC31F /* Info.plist */,
-				F3B911DB27DFAE1200ED0C34 /* GoogleService-Info.plist */,
+				F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */,
 				F3246C9E27CE9D1C002CC31F /* Preview Content */,
 			);
 			path = MyGraine;
@@ -300,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3246CA027CE9D1C002CC31F /* Preview Assets.xcassets in Resources */,
-				F3B911DC27DFAE1300ED0C34 /* GoogleService-Info.plist in Resources */,
 				F3246C9D27CE9D1C002CC31F /* Assets.xcassets in Resources */,
+				F3285F5027DFB39A00055604 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
