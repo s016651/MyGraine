@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2DD8191227CFFB5D00750995 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8191127CFFB5D00750995 /* Constants.swift */; };
-		2DD8191727E110B900750995 /* Migraine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8191627E110B900750995 /* Migraine.swift */; };
 		A9EDD481A596B879A3890443 /* Pods_MyGraine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */; };
 		AC3ED27827CFF7C900A4A5D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27727CFF7C900A4A5D5 /* LoginView.swift */; };
 		AC3ED27A27CFF7D100A4A5D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */; };
@@ -46,7 +45,6 @@
 		010E0CC2A179FB9084F14F75 /* Pods-MyGraine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.debug.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.debug.xcconfig"; sourceTree = "<group>"; };
 		2AEFC80107CEDB3DE23C3AAC /* Pods_MyGraine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyGraine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD8191127CFFB5D00750995 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2DD8191627E110B900750995 /* Migraine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migraine.swift; sourceTree = "<group>"; };
 		90686C4609BB2EEA9FC9CF2E /* Pods-MyGraine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyGraine.release.xcconfig"; path = "Target Support Files/Pods-MyGraine/Pods-MyGraine.release.xcconfig"; sourceTree = "<group>"; };
 		AC3ED27727CFF7C900A4A5D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */,
 				AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */,
 				2DD8191127CFFB5D00750995 /* Constants.swift */,
-				2DD8191627E110B900750995 /* Migraine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,7 +375,6 @@
 				AC3ED28227CFF80400A4A5D5 /* UserInfo.swift in Sources */,
 				AC3ED27A27CFF7D100A4A5D5 /* HomeView.swift in Sources */,
 				F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */,
-				2DD8191727E110B900750995 /* Migraine.swift in Sources */,
 				F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */,
 				2DD8191227CFFB5D00750995 /* Constants.swift in Sources */,
 			);
