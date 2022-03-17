@@ -11,7 +11,7 @@ struct HomeView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         VStack{
-          3
+            Text("Hello World")
         }
     }
 }
