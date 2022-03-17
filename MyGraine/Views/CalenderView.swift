@@ -179,6 +179,7 @@ struct Calender: View {
                 
             }
             //October
+            
             VStack{
                 Text("October")
                 LazyVGrid(columns: layout, spacing: 20) {
