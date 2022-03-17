@@ -13,7 +13,7 @@ struct SettingsView: View {
     @State private var showSheet = false
     var body: some View {
         ZStack{
-            Rectangle().foregroundColor(Color.buttonBackground)
+            Rectangle().foregroundColor(Color.backGroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 HStack{
@@ -23,7 +23,7 @@ struct SettingsView: View {
                         .autocapitalization(.none)
                         .keyboardType(.emailAddress) 
                         .disableAutocorrection(true)
-                        .foregroundColor(Color.buttonText)
+                        .foregroundColor(Color.white)
                         .onChange(of: userInfo.name, perform: {_ in
                             FirebaseFunctions.addUserName(userInfo.name)
                         })

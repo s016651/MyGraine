@@ -22,6 +22,7 @@
 		F3246CAB27CE9D1C002CC31F /* MyGraineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CAA27CE9D1C002CC31F /* MyGraineTests.swift */; };
 		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
 		F3285F5027DFB39A00055604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */; };
+		F32C76DC27E3977600E1F84C /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C76DB27E3977600E1F84C /* EnterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGraineUITests.swift; sourceTree = "<group>"; };
 		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F32C76DB27E3977600E1F84C /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				AC3ED27927CFF7D100A4A5D5 /* HomeView.swift */,
 				AC3ED27B27CFF7E800A4A5D5 /* SettingsView.swift */,
 				AC3ED27D27CFF7F000A4A5D5 /* CalenderView.swift */,
+				F32C76DB27E3977600E1F84C /* EnterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				AC3ED28227CFF80400A4A5D5 /* UserInfo.swift in Sources */,
 				AC3ED27A27CFF7D100A4A5D5 /* HomeView.swift in Sources */,
 				F3246C9B27CE9D18002CC31F /* ContentView.swift in Sources */,
+				F32C76DC27E3977600E1F84C /* EnterView.swift in Sources */,
 				F3246C9927CE9D18002CC31F /* MyGraineApp.swift in Sources */,
 				2DD8191227CFFB5D00750995 /* Constants.swift in Sources */,
 			);

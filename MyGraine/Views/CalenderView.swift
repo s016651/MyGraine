@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Calender: View {
+struct CalenderView: View {
     let data = Array(1...31).map { " \($0)"}
     
     let layout = [
@@ -204,7 +204,7 @@ struct Calender: View {
     
     struct Calender_Previews: PreviewProvider {
         static var previews: some View {
-            Calender()
+            CalenderView()
         }
     }
 }

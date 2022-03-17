@@ -10,9 +10,15 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
-        VStack{
-            Text("Hello World")
-            Text("A")
+        TabView{
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+            CalenderView()
+            EnterView()
+            
         }
     }
 }
