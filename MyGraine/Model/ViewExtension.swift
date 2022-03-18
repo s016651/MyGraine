@@ -1,17 +1,12 @@
 //
-//  Constants.swift
+//  ViewExtension.swift
 //  MyGraine
 //
-//  Created by Nathan Cohen (student LM) on 3/2/22.
+//  Created by Adam Lee (student LM) on 3/18/22.
 //
 
-import SwiftUI
+import Foundation
 
-extension Color{
-    static let backGroundColor = Color("backGroundColor")
-    static let buttonBackground = Color("buttonBackground")
-    static let buttonText = Color("buttonText")
-}
 extension View {
     func placeholder<Content: View>(
         when shouldShow: Bool,

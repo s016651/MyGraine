@@ -20,10 +20,14 @@ struct SettingsView: View {
                     Image(systemName: "person")
                         .foregroundColor(Color.buttonText)
                     TextField("Name" , text : $userInfo.name)
+                        .placeholder(when: userInfo.name.isEmpty) {
+                               Text("Name").foregroundColor(.white)
+                       }
                         .autocapitalization(.none)
                         .keyboardType(.emailAddress) 
                         .disableAutocorrection(true)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.buttonText)
+                        .accentColor(Color.buttonBackground)
                         .onChange(of: userInfo.name, perform: {_ in
                             FirebaseFunctions.addUserName(userInfo.name)
                         })

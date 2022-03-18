@@ -11,7 +11,7 @@ struct LoginView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         ZStack{
-            Rectangle().foregroundColor(Color.backGroundColor)
+            Rectangle().foregroundColor(Color.white)
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 HStack{
@@ -35,7 +35,7 @@ struct LoginView: View {
                         
                     }
                 }
-                .foregroundColor(Color.buttonText)
+                .foregroundColor(Color.buttonBackground)
                 .padding()
                 Spacer()
                 
