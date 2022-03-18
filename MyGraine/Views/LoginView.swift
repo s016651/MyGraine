@@ -11,7 +11,7 @@ struct LoginView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         ZStack{
-            Rectangle().foregroundColor(Color.white)
+            Rectangle().foregroundColor(Color.backGroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 HStack{
@@ -35,8 +35,11 @@ struct LoginView: View {
                         
                     }
                 }
-                .foregroundColor(Color.buttonBackground)
+                .frame(width: UIScreen.main.bounds.width-100)
                 .padding()
+                .background(Color.buttonBackground)
+                .foregroundColor(Color.buttonText)
+                .cornerRadius(30)
                 Spacer()
                 
                 Button("Sign In"){

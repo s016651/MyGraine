@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-   // @EnvironmentObject var userInfo : UserInfo
-    @StateObject var userInfo : UserInfo = UserInfo()
+    @EnvironmentObject var userInfo : UserInfo
     @State private var showSheet = false
     var body: some View {
         ZStack{
@@ -20,17 +19,18 @@ struct SettingsView: View {
                     Image(systemName: "person")
                         .foregroundColor(Color.buttonText)
                     TextField("Name" , text : $userInfo.name)
-                        .placeholder(when: userInfo.name.isEmpty) {
-                               Text("Name").foregroundColor(.white)
+                        .placeholder(when: userInfo.name == "") {
+                            Text("Name").foregroundColor(Color.backGroundColor)
                        }
                         .autocapitalization(.none)
                         .keyboardType(.emailAddress) 
                         .disableAutocorrection(true)
-                        .foregroundColor(Color.buttonText)
-                        .accentColor(Color.buttonBackground)
+                        .foregroundColor(Color.buttonBackground)
+                        .background(Color.white)
                         .onChange(of: userInfo.name, perform: {_ in
                             FirebaseFunctions.addUserName(userInfo.name)
                         })
+                        
                 }
                 .padding()
                 .padding(.top, 50)
@@ -44,6 +44,7 @@ struct SettingsView: View {
                 .foregroundColor(Color.buttonText)
                 .cornerRadius(30)
                 .padding(.bottom, 50 )
+                Text(String(userInfo.loggedIn))
             }
         }
     }
@@ -51,6 +52,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView(userInfo: UserInfo())
+        SettingsView()
     }
 }
