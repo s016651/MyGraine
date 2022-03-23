@@ -193,42 +193,7 @@ struct CalenderView: View {
                     .padding(.horizontal)
                     
                 }
-                //October
                 
-                VStack{
-                    Text("November")
-                    LazyVGrid(columns: layout, spacing: 20) {
-                        ForEach(data, id: \.self) { item in
-                            VStack{
-                                NavigationLink( destination: EnterView(), label: {Text(item)})
-                                Capsule()
-                                    .fill(Color.blue)
-                                    .frame(height: 56)
-                                
-                            }
-                        }
-                    }
-                    .padding(.horizontal)
-                    
-                }
-                //October
-                
-                VStack{
-                    Text("December")
-                    LazyVGrid(columns: layout, spacing: 20) {
-                        ForEach(data, id: \.self) { item in
-                            VStack{
-                                NavigationLink( destination: EnterView(), label: {Text(item)})
-                                Capsule()
-                                    .fill(Color.blue)
-                                    .frame(height: 56)
-                                
-                            }
-                        }
-                    }
-                    .padding(.horizontal)
-                    
-                }
                 
             }
             
