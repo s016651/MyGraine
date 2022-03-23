@@ -15,195 +15,195 @@ struct CalenderView: View {
     ]
     
     var body: some View {
-        //January
-        ScrollView{
-            VStack{
-
-                Text("January")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            Button( item, action:{
-                                    HomeView()
-                        })
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-
+        NavigationView{
+            //January
+            ScrollView{
+                VStack{
+                    
+                    Text("January")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                NavigationLink( destination: EnterView(), label: {Text(item)})
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //February
-            VStack{
-                Text("February")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //February
+                VStack{
+                    Text("February")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //March
-            VStack{
-                Text("March")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //March
+                VStack{
+                    Text("March")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //April
-            VStack{
-                Text("April")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //April
+                VStack{
+                    Text("April")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //May
-            VStack{
-                Text("May")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //May
+                VStack{
+                    Text("May")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //June
-            VStack{
-                Text("June")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height:56)
-                            
-                            Text(item)
+                //June
+                VStack{
+                    Text("June")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height:56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //July
-            VStack{
-                Text("July")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //July
+                VStack{
+                    Text("July")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //August
-            VStack{
-                Text("August")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //August
+                VStack{
+                    Text("August")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
-                
-            }
-            //September
-            VStack{
-                Text("September")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
+                //September
+                VStack{
+                    Text("September")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
                         }
                     }
+                    .padding(.horizontal)
+                    
                 }
-                .padding(.horizontal)
+                //October
                 
+                VStack{
+                    Text("October")
+                    LazyVGrid(columns: layout, spacing: 20) {
+                        ForEach(data, id: \.self) { item in
+                            VStack{
+                                
+                                Capsule()
+                                    .fill(Color.blue)
+                                    .frame(height: 56)
+                                
+                                Text(item)
+                            }
+                        }
+                    }
+                    .padding(.horizontal)
+                    
+                }
             }
-            //October
             
-            VStack{
-                Text("October")
-                LazyVGrid(columns: layout, spacing: 20) {
-                    ForEach(data, id: \.self) { item in
-                        VStack{
-                            
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 56)
-                            
-                            Text(item)
-                        }
-                    }
-                }
-                .padding(.horizontal)
-                
-            }
-        }
-        
-        
-    }
+            
+        }}
     
     struct Calender_Previews: PreviewProvider {
         static var previews: some View {
