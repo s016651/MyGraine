@@ -17,6 +17,9 @@ struct HomeView: View {
                     Text("Profile")
                 }
             CalenderView()
+                .tabItem{
+                    Image(systemName: "")
+                }
             EnterView()
             
         }

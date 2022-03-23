@@ -19,9 +19,6 @@ struct SettingsView: View {
                     Image(systemName: "person")
                         .foregroundColor(Color.buttonText)
                     TextField("Name" , text : $userInfo.name)
-                        .placeholder(when: userInfo.name == "") {
-                            Text("Name").foregroundColor(Color.backGroundColor)
-                       }
                         .autocapitalization(.none)
                         .keyboardType(.emailAddress) 
                         .disableAutocorrection(true)
@@ -44,7 +41,6 @@ struct SettingsView: View {
                 .foregroundColor(Color.buttonText)
                 .cornerRadius(30)
                 .padding(.bottom, 50 )
-                Text(String(userInfo.loggedIn))
             }
         }
     }
