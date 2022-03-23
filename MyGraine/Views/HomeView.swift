@@ -18,9 +18,14 @@ struct HomeView: View {
                 }
             CalenderView()
                 .tabItem{
-                    Image(systemName: "")
+                    Image(systemName: "calendar.circle")
+                    Text("Calendar")
                 }
             EnterView()
+                .tabItem{
+                    Image(systemName: "pencil.circle")
+                    Text("New Migraine")
+                }
             
         }
     }
