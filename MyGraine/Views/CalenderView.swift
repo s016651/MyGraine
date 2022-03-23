@@ -18,19 +18,19 @@ struct CalenderView: View {
         //January
         ScrollView{
             VStack{
-                Button( item, action:{
-                        HomeView()
-            })
+
                 Text("January")
                 LazyVGrid(columns: layout, spacing: 20) {
                     ForEach(data, id: \.self) { item in
                         VStack{
-                            
+                            Button( item, action:{
+                                    HomeView()
+                        })
                             Capsule()
                                 .fill(Color.blue)
                                 .frame(height: 56)
                             
-                            Text(item)
+
                         }
                     }
                 }
