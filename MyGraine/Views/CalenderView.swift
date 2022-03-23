@@ -26,7 +26,10 @@ struct Calender: View {
                             Capsule()
                                 .fill(Color.blue)
                                 .frame(height: 56)
-                            
+                            Button("Click Me", action: {
+                                HomeView()
+                            })
+                                   
                             Text(item)
                         }
                     }
