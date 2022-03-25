@@ -23,6 +23,7 @@
 		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
 		F3285F5027DFB39A00055604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */; };
 		F32C76DC27E3977600E1F84C /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C76DB27E3977600E1F84C /* EnterView.swift */; };
+		F3D6EC7C27EE395400C4DAE9 /* MigraineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6EC7B27EE395400C4DAE9 /* MigraineInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F32C76DB27E3977600E1F84C /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
+		F3D6EC7B27EE395400C4DAE9 /* MigraineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigraineInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				AC3ED27F27CFF7FB00A4A5D5 /* FirebaseFunctions.swift */,
 				AC3ED28127CFF80400A4A5D5 /* UserInfo.swift */,
 				2DD8191127CFFB5D00750995 /* Constants.swift */,
+				F3D6EC7B27EE395400C4DAE9 /* MigraineInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D6EC7C27EE395400C4DAE9 /* MigraineInfo.swift in Sources */,
 				AC3ED27C27CFF7E800A4A5D5 /* SettingsView.swift in Sources */,
 				AC3ED28027CFF7FB00A4A5D5 /* FirebaseFunctions.swift in Sources */,
 				AC3ED27827CFF7C900A4A5D5 /* LoginView.swift in Sources */,
