@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CalenderView: View {
     let data = Array(1...31).map { " \($0)"}
-    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "september", "October", "November", "December"]
+    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let layout = [
         GridItem(.adaptive(minimum: 30))
     ]
@@ -45,7 +45,7 @@ struct CalenderView: View {
         }
         
         
-    }}
+    }
 
 struct Calender_Previews: PreviewProvider {
     static var previews: some View {
