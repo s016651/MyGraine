@@ -23,6 +23,7 @@
 		F3246CB627CE9D1C002CC31F /* MyGraineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3246CB527CE9D1C002CC31F /* MyGraineUITests.swift */; };
 		F3285F5027DFB39A00055604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */; };
 		F32C76DC27E3977600E1F84C /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C76DB27E3977600E1F84C /* EnterView.swift */; };
+		F3839D0427F4CC2B00F74658 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3839D0327F4CC2B00F74658 /* HistoryView.swift */; };
 		F3D6EC7C27EE395400C4DAE9 /* MigraineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6EC7B27EE395400C4DAE9 /* MigraineInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F3246CB727CE9D1C002CC31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3285F4F27DFB39A00055604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F32C76DB27E3977600E1F84C /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
+		F3839D0327F4CC2B00F74658 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		F3D6EC7B27EE395400C4DAE9 /* MigraineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigraineInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				AC3ED27B27CFF7E800A4A5D5 /* SettingsView.swift */,
 				AC3ED27D27CFF7F000A4A5D5 /* CalenderView.swift */,
 				F32C76DB27E3977600E1F84C /* EnterView.swift */,
+				F3839D0327F4CC2B00F74658 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D6EC7C27EE395400C4DAE9 /* MigraineInfo.swift in Sources */,
+				F3839D0427F4CC2B00F74658 /* HistoryView.swift in Sources */,
 				AC3ED27C27CFF7E800A4A5D5 /* SettingsView.swift in Sources */,
 				AC3ED28027CFF7FB00A4A5D5 /* FirebaseFunctions.swift in Sources */,
 				AC3ED27827CFF7C900A4A5D5 /* LoginView.swift in Sources */,
