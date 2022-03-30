@@ -18,24 +18,26 @@ struct CalenderView: View {
         NavigationView{
             //January
             ScrollView{
-                VStack{
-                    
-                    Text("January")
-                    LazyVGrid(columns: layout, spacing: 20) {
-                        ForEach(data, id: \.self) { item in
-                            VStack{
-                                NavigationLink( destination: EnterView(), label: {Text(item)})
-                                
-                                Capsule()
-                                    .fill(Color.blue)
-                                    .frame(height: 56)
-                                
-                                
+                ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+                    VStack{
+                        
+                        Text("January")
+                        LazyVGrid(columns: layout, spacing: 20) {
+                            ForEach(data, id: \.self) { item in
+                                VStack{
+                                    NavigationLink( destination: EnterView(), label: {Text(item)})
+                                    
+                                    Capsule()
+                                        .fill(Color.blue)
+                                        .frame(height: 56)
+                                    
+                                    
+                                }
                             }
                         }
+                        .padding(.horizontal)
+                        
                     }
-                    .padding(.horizontal)
-                    
                 }
                 //February
                 VStack{
