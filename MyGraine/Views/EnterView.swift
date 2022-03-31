@@ -13,10 +13,14 @@ struct EnterView: View {
             Rectangle().foregroundColor(Color.backGroundColor)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                Text("NEW MIGRAINE")
+                Text("New Migraine")
                     .foregroundColor(Color.buttonText)
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Spacer()
+                
+                HStack{
+                    
+                }
             }
         }
     }
