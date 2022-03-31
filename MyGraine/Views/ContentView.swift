@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         Group{
             if userInfo.loggedIn{
-                HomeView()
+                QuestionaireView()
             }
             else {
                 LoginView()
