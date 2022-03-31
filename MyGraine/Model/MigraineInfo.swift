@@ -8,14 +8,12 @@
 import SwiftUI
 
 class MigraineInfo : ObservableObject {
-    var day : Int
-    var month : Int
+    var date : String
     var stress : String
     var hydration : String
     
-    init(day :Int = 0 , month : Int = 0 , stress : String = "" , hydration : String = "") {
-        self.day = day
-        self.month = month
+    init(date :String = "" , stress : String = "" , hydration : String = "") {
+        self.date = date
         self.stress = stress
         self.hydration = hydration
         

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EnterView: View {
+    
+    @EnvironmentObject var migraineInfo : MigraineInfo
     var body: some View {
         ZStack{
             Rectangle().foregroundColor(Color.backGroundColor)

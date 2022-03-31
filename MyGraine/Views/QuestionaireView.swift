@@ -13,11 +13,11 @@ struct QuestionaireView: View {
     var body: some View {
         NavigationView{
             HomeView()
-        
-    }.fullScreenCover(isPresented: $shouldShowOnboarding, content: {
-        OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
-    })
-}
+            
+        }.fullScreenCover(isPresented: $shouldShowOnboarding, content: {
+            OnboardingView(shouldShowOnboarding: $shouldShowOnboarding)
+        })
+    }
 }
 
 
