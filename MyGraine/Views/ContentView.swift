@@ -13,6 +13,7 @@ struct ContentView: View {
         Group{
             if userInfo.loggedIn{
                 QuestionaireView()
+                
             }
             else {
                 LoginView()
