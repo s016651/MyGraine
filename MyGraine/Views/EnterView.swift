@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct EnterView: View {
-    
+    @State var currentTime = Date()
+    var closedRange = Calendar.current.date(byAdding: . year, value: -1, to: Date())!
     @EnvironmentObject var migraineInfo : MigraineInfo
+    
+    func formatDate() -> String{
+        let components = Calendar.current.dateComponents([.hour, .minute, .day, .month, .year], from: currentTime)
+        let hour = components.hour ?? 0
+        let minute = components.minute ?? 0
+        let day = components.day ?? 0
+        let month = components.month ?? 0
+        let year = components.year ?? 0
+        
+        
+        return "\(day)-\(month)-\(year) (\(hour):\(minute))"
+    }
     var body: some View {
         ZStack{
             Rectangle().foregroundColor(Color.backGroundColor)
@@ -20,8 +33,13 @@ struct EnterView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Spacer()
                 
-                HStack{
-                    
+                Form{
+                    Section(header:Text("Enter Migraine Date")){
+                        DatePicker("Date:", selection: $currentTime , in: closedRange...Date())
+                    }
+                    Section(header:Text("Result")){
+                        Text(formatDate())
+                    }
                 }
             }
         }

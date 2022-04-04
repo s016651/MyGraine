@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct QuestionaireView: View {
-    //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
-    @State var shouldShowOnboarding: Bool = true
+    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    //@State var shouldShowOnboarding: Bool = true
     var body: some View {
         NavigationView{
             HomeView()
