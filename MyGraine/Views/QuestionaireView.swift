@@ -31,22 +31,10 @@ struct OnboardingView: View {
             
                 .ignoresSafeArea(.all)
             
-            YesNoView(title: "have you been experiencing stress levels", subtitle1: "yes", subtitle2: "no",showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
+            YesNoView(title: "What is your height?", subtitle1: "yes", subtitle2: "no",showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
-            YesNoView(title: "have you been drinking water", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
+            YesNoView(title: "What is your weight", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
-            
-            YesNoView(title: "have you been experiencing constipation", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
-            
-            YesNoView(title: "have you experienced extreme mood changes or swings", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
-            
-            YesNoView(title: "have you been yawning frequently", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
-            
-            YesNoView(title: "have you been exepriencing vision loss or seeing bright spots", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
-            
-            YesNoView(title: "have you been having difficulty talking", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
-            
-            YesNoView(title: "have you been experiencing a numbness sensation on your face", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             YesNoView(title: ""
                       , subtitle1: ""
                       , subtitle2: ""

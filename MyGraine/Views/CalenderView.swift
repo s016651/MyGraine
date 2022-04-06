@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CalenderView: View {
+    struct month{
+        let name : String
+        let numberOfDays : Int
+    }
     let data = Array(1...31).map { " \($0)"}
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     let layout = [
