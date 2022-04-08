@@ -30,6 +30,9 @@ struct OnboardingView: View {
             YesNoView(title: "What Is Your Gender?", subtitle1: "Male", subtitle2: "Female", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
                 .ignoresSafeArea(.all)
+            Picker(selection: $UserInfo.Gender, label: Text("Gender"), content: {
+                ForEach(Gender.allCases){ ti in
+                    Text(ti.rawValue)
             
             YesNoView(title: "What is your height?", subtitle1: "yes", subtitle2: "no",showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
@@ -82,6 +85,10 @@ struct YesNoView: View {
                 
                 
             })
+            Picker(selection: $UserInfo.Gender, label: Text("Gender"), content: {
+                ForEach(Gender.allCases){ ti in
+                    Text(ti.rawValue)
+                }
             if showsDismissButton {
                 Button(action: {
                     shouldShowOnboarding.toggle()
