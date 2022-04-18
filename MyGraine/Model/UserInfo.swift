@@ -23,14 +23,17 @@ class UserInfo : ObservableObject {
     var password : String
     @Published var loggedIn : Bool
     @Published var gender: Gender = .Male
-    @Published var height : Int = 0
-    @Published var weight : Int = 0
+    @Published var height : Int
+    @Published var weight : Int
     
-    init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false) {
+    init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false, height: Int = 0, weight: Int = 0) {
         self.name = name
         self.email = email
         self.password = password
         self.loggedIn = loggedIn
+        self.height = height
+        self.weight = weight
+        
         
         FirebaseFunctions.getUserInfo(self)
         
