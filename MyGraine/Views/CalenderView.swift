@@ -25,7 +25,7 @@ struct CalenderView: View {
                 ForEach(0 ..< 12) { item in
                     VStack{
                         
-                        Text(month[item])
+//                        Text(month[item])
                         LazyVGrid(columns: layout, spacing: 20) {
                             ForEach(data, id: \.self) { item in
                                 VStack{

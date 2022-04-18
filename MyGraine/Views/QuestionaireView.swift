@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct QuestionaireView: View {
-    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
-    //@State var shouldShowOnboarding: Bool = true
+//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    @State var shouldShowOnboarding: Bool = true
+    
     var body: some View {
         NavigationView{
             HomeView()
@@ -25,18 +26,13 @@ struct QuestionaireView: View {
 
 struct OnboardingView: View {
     @Binding var shouldShowOnboarding: Bool
+    @EnvironmentObject var userInfo : UserInfo
     var body: some View{
         TabView{
             YesNoView(title: "What Is Your Gender?", subtitle1: "Male", subtitle2: "Female", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
                 .ignoresSafeArea(.all)
-          
-            Picker(selection: $UserInfo.Gender, label: Text("Gender"), content: {
-                ForEach(Gender.allCases){ ti in
-                    Text(ti.rawValue)
-                }
-            }
-            
+            GenderView()
             YesNoView(title: "What is your height?", subtitle1: "yes", subtitle2: "no",showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
             YesNoView(title: "What is your weight", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
@@ -49,6 +45,17 @@ struct OnboardingView: View {
             
         }.tabViewStyle(PageTabViewStyle())
     }
+}
+struct GenderView: View{
+                @EnvironmentObject var userInfo : UserInfo
+                var body : some View{
+                    
+                    Picker(selection: $userInfo.gender, label: Text("Gender"), content: {
+                        ForEach(Gender.allCases){ ti in
+                            Text(ti.rawValue)
+                        }
+                    })
+                }
 }
 struct YesNoView: View {
     let title: String
@@ -88,11 +95,7 @@ struct YesNoView: View {
                 
                 
             })
-            Picker(selection: $UserInfo.Gender, label: Text("Gender"), content: {
-                ForEach(Gender.allCases){ ti in
-                    Text(ti.rawValue)
-                }
-            }
+            
             if showsDismissButton {
                 Button(action: {
                     shouldShowOnboarding.toggle()
