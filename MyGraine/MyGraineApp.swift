@@ -23,11 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 @main
 struct MyGraineApp: App {
     @StateObject var userInfo = UserInfo()
+    @StateObject var migraineInfo = MigraineInfo()
     @UIApplicationDelegateAdaptor private var appDelegate : AppDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(userInfo)
+                .environmentObject(migraineInfo)
         }
     }
 }

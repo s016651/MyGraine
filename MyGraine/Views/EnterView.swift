@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct EnterView: View {
-    @State var currentTime = Date()
     var closedRange = Calendar.current.date(byAdding: . year, value: -1, to: Date())!
     @EnvironmentObject var migraineInfo : MigraineInfo
     
     func formatDate() -> String{
-        let components = Calendar.current.dateComponents([.hour, .minute, .day, .month, .year], from: currentTime)
+        let components = Calendar.current.dateComponents([.hour, .minute, .day, .month, .year], from: migraineInfo.date)
         let hour = components.hour ?? 0
         let minute = components.minute ?? 0
         let day = components.day ?? 0
@@ -35,10 +34,10 @@ struct EnterView: View {
                 
                 Form{
                     Section(header:Text("Enter Migraine Date")){
-                        DatePicker("Date:", selection: $currentTime , in: closedRange...Date())
+                        DatePicker("Date:", selection: $migraineInfo.date , in: closedRange...Date())
                     }
                     Section(header:Text("Result")){
-                        Text(formatDate())
+                        Text("\(migraineInfo.date)")
                     }
                 }
             }
