@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionaireView: View {
-//    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
+    //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
     @State var shouldShowOnboarding: Bool = true
     
     var body: some View {
@@ -29,13 +29,14 @@ struct OnboardingView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View{
         TabView{
-            YesNoView(title: "What Is Your Gender?", subtitle1: "Male", subtitle2: "Female", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
+        WelcomeView()
+        NameView()
+        GenderView()
+        HeightView()
+        WeightView()
             
-                .ignoresSafeArea(.all)
-            GenderView()
-            YesNoView(title: "What is your height?", subtitle1: "yes", subtitle2: "no",showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
             
-            YesNoView(title: "What is your weight", subtitle1: "yes", subtitle2: "no", showsDismissButton: false, shouldShowOnboarding: $shouldShowOnboarding)
+            
             
             YesNoView(title: ""
                       , subtitle1: ""
@@ -47,34 +48,78 @@ struct OnboardingView: View {
     }
 }
 struct GenderView: View{
-                @EnvironmentObject var userInfo : UserInfo
-                var body : some View{
-                    
-                    Picker(selection: $userInfo.gender, label: Text("Gender"), content: {
-                        ForEach(Gender.allCases){ ti in
-                            Text(ti.rawValue)
-                        }
-                    })
-                    
-                    TextField("Weight", value: $userInfo.weight, formatter: NumberFormatter())
-                        .padding()
-                      
-                    TextField("Height", value: $userInfo.height, formatter: NumberFormatter())
-                    
-                    TextField("Name" , text : $userInfo.name)
-                        .autocapitalization(.none)
-                        .keyboardType(.emailAddress)
-                        .disableAutocorrection(true)
-                        .foregroundColor(Color.buttonBackground)
-                        .background(Color.white)
-                        .onChange(of: userInfo.name, perform: {_ in
-                            FirebaseFunctions.addUserName(userInfo.name)
-                        })
-                }
-    
-    
+    @EnvironmentObject var userInfo : UserInfo
+    var body : some View{
+        
+        Picker(selection: $userInfo.gender, label: Text("Gender"), content: {
+            ForEach(Gender.allCases){ ti in
+                Text(ti.rawValue)
+            }
+        })
+    }
+}
+struct WeightView: View{
+    @EnvironmentObject var userInfo : UserInfo
+    var body : some View{
+        TextField("Weight", value: $userInfo.weight, formatter: NumberFormatter())
+            .padding()
+    }
     
 }
+struct HeightView: View{
+    @EnvironmentObject var userInfo : UserInfo
+    var body : some View{
+        VStack{
+            HStack{
+            Text("Height")
+                .bold()
+                .font(.system(size: 42))
+                .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            Spacer()
+            Text("Please Enter In Your Current Height In Inches")
+                
+                
+                
+            Spacer()
+            TextField("Height", value: $userInfo.height, formatter: NumberFormatter())
+            Spacer()
+            
+        }
+   
+        
+        
+    }
+    
+}
+struct NameView: View{
+    @EnvironmentObject var userInfo : UserInfo
+    var body : some View{
+     
+        TextField("Name" , text : $userInfo.name)
+            .autocapitalization(.none)
+            .keyboardType(.emailAddress)
+            .disableAutocorrection(true)
+            .foregroundColor(Color.buttonBackground)
+            .background(Color.white)
+            .onChange(of: userInfo.name, perform: {_ in
+                FirebaseFunctions.addUserName(userInfo.name)
+            })
+        
+        
+    }
+    
+}
+struct WelcomeView: View{
+    var body : some View{
+        Text("Hello. Welcome to MyGraine! Please Begin By Entering The Following Basic Information In order To Maximize Our Apps Accuracy!")
+    }
+}
+
+
+
+
 struct YesNoView: View {
     let title: String
     let subtitle1: String
@@ -115,7 +160,7 @@ struct YesNoView: View {
                 
                 
             })
-          
+            
             
             if showsDismissButton {
                 Button(action: {

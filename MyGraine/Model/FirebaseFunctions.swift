@@ -19,17 +19,17 @@ struct FirebaseFunctions{
             userInfo.loggedIn = true
             let uid = user.uid
             
-            Firestore.firestore().collection("users").document(uid).getDocument{document, _ in
-                guard let document = document else {return}
-                
-                
-               //getting information from the user's document
-              
-                userInfo.name = document.get ("name") as? String ?? ""
-                
-                
-               
-            }
+//            Firestore.firestore().collection("users").document(uid).getDocument{document, _ in
+//                guard let document = document else {return}
+//
+//
+//               //getting information from the user's document
+//
+//                userInfo.name = document.get ("name") as? String ?? ""
+//
+//
+//
+//            }
         }
     }
     
