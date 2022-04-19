@@ -36,8 +36,22 @@ struct EnterView: View {
                     Section(header:Text("Enter Migraine Date")){
                         DatePicker("Date:", selection: $migraineInfo.date , in: closedRange...Date())
                     }
-                    Section(header:Text("Result")){
-                        Text("\(migraineInfo.date)")
+                    Section(header:Text("Enter Your Stress Level From 0 - 10")){
+                        HStack{
+                            Text("\(Int(migraineInfo.stressLevel))")
+                            Slider(value: $migraineInfo.stressLevel , in: 0...10)
+                        }
+                        
+                    }
+                    Section(header:Text("Enter the Amount of Water You have drank today")){
+                        VStack{
+                            Text("Average Cup of Water = 8 oz")
+                            HStack{
+                                Text("\(Int(migraineInfo.hydration))")
+                                Slider(value: $migraineInfo.hydration , in: 0...200)
+
+                            }
+                        }
                     }
                 }
             }
