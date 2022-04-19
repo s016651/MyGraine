@@ -55,7 +55,25 @@ struct GenderView: View{
                             Text(ti.rawValue)
                         }
                     })
+                    
+                    TextField("Weight", value: $userInfo.weight, formatter: NumberFormatter())
+                        .padding()
+                      
+                    TextField("Height", value: $userInfo.height, formatter: NumberFormatter())
+                    
+                    TextField("Name" , text : $userInfo.name)
+                        .autocapitalization(.none)
+                        .keyboardType(.emailAddress)
+                        .disableAutocorrection(true)
+                        .foregroundColor(Color.buttonBackground)
+                        .background(Color.white)
+                        .onChange(of: userInfo.name, perform: {_ in
+                            FirebaseFunctions.addUserName(userInfo.name)
+                        })
                 }
+    
+    
+    
 }
 struct YesNoView: View {
     let title: String
@@ -63,6 +81,8 @@ struct YesNoView: View {
     let subtitle2: String
     let showsDismissButton: Bool
     @Binding var shouldShowOnboarding: Bool
+    @EnvironmentObject var userInfo : UserInfo
+    
     
     
     
@@ -95,6 +115,7 @@ struct YesNoView: View {
                 
                 
             })
+          
             
             if showsDismissButton {
                 Button(action: {
