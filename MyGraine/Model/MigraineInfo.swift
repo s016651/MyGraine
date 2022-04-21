@@ -12,14 +12,15 @@ class MigraineInfo : ObservableObject {
     @Published var stressLevel : Float
     @Published var sleep : Float
     @Published var hydration : Float
+    @Published var duration : Date
+    @Published var hunger : Bool = false
     
-    init(date : Date = Date() , sleep : Float = 0.0 , hydration : Float = 0 , stressLevel: Float = 0.0) {
+    init(date : Date = Date() , sleep : Float = 0.0 , hydration : Float = 0 , stressLevel: Float = 0.0,  duration : Date = Date()) {
         self.date = date
         self.stressLevel = stressLevel
         self.sleep = sleep
         self.hydration = hydration
-        
-        
+        self.duration = duration
         
     }
 }

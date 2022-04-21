@@ -36,6 +36,9 @@ struct EnterView: View {
                     Section(header:Text("Enter Migraine Date")){
                         DatePicker("Date:", selection: $migraineInfo.date , in: closedRange...Date())
                     }
+                    Section(header:Text("Enter Migraine End Date")){
+                        DatePicker("Date:", selection: $migraineInfo.duration , in: migraineInfo.date...)
+                    }
                     Section(header:Text("Enter Your Stress Level From 0 - 10")){
                         HStack{
                             Text("\(Int(migraineInfo.stressLevel))")
@@ -43,16 +46,60 @@ struct EnterView: View {
                         }
                         
                     }
-                    Section(header:Text("Enter the Amount of Water You have drank today")){
+                    Section(header:Text("Enter the Amount of Hours you Slept Prior to Your Migraine")){
+                        HStack{
+                            Text("\(Int(migraineInfo.sleep))")
+                            Slider(value: $migraineInfo.sleep , in: 0...16)
+                        }
+                        
+                    }
+                    Section(header:Text("Enter the Amount of Water You have drank today in oz")){
                         VStack{
                             Text("Average Cup of Water = 8 oz")
                             HStack{
                                 Text("\(Int(migraineInfo.hydration))")
                                 Slider(value: $migraineInfo.hydration , in: 0...200)
-
+                                
                             }
                         }
                     }
+                    Section(header: Text("Have You Been Keeping Up With Your Meals")){
+                        VStack{
+                            Button( action: {migraineInfo.hunger = true}, label:
+                                        {
+                                Text("Yes")
+                            }).frame(width: UIScreen.main.bounds.width-100, height: 30)
+                                .padding()
+                                .background(Color.buttonBackground)
+                                .foregroundColor(Color.buttonText)
+                                .cornerRadius(30)
+                                .padding(.bottom, 50 )
+                            Button( action: {migraineInfo.hunger = false}, label:
+                                        {
+                                Text("No")
+                            }).frame(width: UIScreen.main.bounds.width-100, height: 30)
+                                .padding()
+                                .background(Color.buttonBackground)
+                                .foregroundColor(Color.buttonText)
+                                .cornerRadius(30)
+                                .padding(.bottom, 50 )
+                            Text(String(migraineInfo.hunger))
+                        }
+                        
+                    }
+                    Section(){
+                        Button( action: {}, label:
+                                    {
+                            Text("Submit")
+                        }).frame(width: UIScreen.main.bounds.width-100, height: 30)
+                            .padding()
+                            .background(Color.buttonBackground)
+                            .foregroundColor(Color.buttonText)
+                            .cornerRadius(30)
+                            .padding(.bottom, 50 )
+                        
+                    }
+                    
                 }
             }
         }
