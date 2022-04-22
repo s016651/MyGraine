@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestionaireView: View {
     //    @AppStorage("shouldShowOnboarding") var shouldShowOnboarding: Bool = true
-    @State var shouldShowOnboarding: Bool = true
+      @State var shouldShowOnboarding: Bool = true
     
     var body: some View {
         NavigationView{
@@ -28,98 +28,25 @@ struct OnboardingView: View {
     @Binding var shouldShowOnboarding: Bool
     @EnvironmentObject var userInfo : UserInfo
     var body: some View{
-        TabView{
-        WelcomeView()
-        NameView()
-        GenderView()
-        HeightView()
-        WeightView()
-            
-            
-            
-            
-            YesNoView(title: ""
-                      , subtitle1: ""
-                      , subtitle2: ""
-                      , showsDismissButton: true
-                      , shouldShowOnboarding: $shouldShowOnboarding)
-            
-        }.tabViewStyle(PageTabViewStyle())
-    }
-}
-struct GenderView: View{
-    @EnvironmentObject var userInfo : UserInfo
-    var body : some View{
-        
-        Picker(selection: $userInfo.gender, label: Text("Gender"), content: {
-            ForEach(Gender.allCases){ ti in
-                Text(ti.rawValue)
-            }
-        })
-    }
-}
-struct WeightView: View{
-    @EnvironmentObject var userInfo : UserInfo
-    var body : some View{
-        TextField("Weight", value: $userInfo.weight, formatter: NumberFormatter())
-            .padding()
-    }
-    
-}
-struct HeightView: View{
-    @EnvironmentObject var userInfo : UserInfo
-    var body : some View{
-        VStack{
-            HStack{
-            Text("Height")
-                .bold()
-                .font(.system(size: 42))
-                .multilineTextAlignment(.leading)
-                Spacer()
-            }
-            Spacer()
-            Text("Please Enter In Your Current Height In Inches")
+        ZStack{
+            Rectangle().background(Color.red).ignoresSafeArea(.all)
+          TabView{
+                WelcomeView()
+                NameView()
+                GenderView()
+                HeightView()
+                WeightView()
+                YesNoView(title: ""
+                          , subtitle1: ""
+                          , subtitle2: ""
+                          , showsDismissButton: true
+                          , shouldShowOnboarding: $shouldShowOnboarding)
                 
-                
-                
-            Spacer()
-            TextField("Height", value: $userInfo.height, formatter: NumberFormatter())
-            Spacer()
-            
+            }.tabViewStyle(PageTabViewStyle())
         }
-   
-        
         
     }
-    
 }
-struct NameView: View{
-    @EnvironmentObject var userInfo : UserInfo
-    var body : some View{
-     
-        TextField("Name" , text : $userInfo.name)
-            .autocapitalization(.none)
-            .keyboardType(.emailAddress)
-            .disableAutocorrection(true)
-            .foregroundColor(Color.buttonBackground)
-            .background(Color.white)
-            .onChange(of: userInfo.name, perform: {_ in
-                FirebaseFunctions.addUserName(userInfo.name)
-            })
-        
-        
-    }
-    
-}
-struct WelcomeView: View{
-    var body : some View{
-        Text("Hello. Welcome to MyGraine! Please Begin By Entering The Following Basic Information In order To Maximize Our Apps Accuracy!")
-    }
-}
-
-
-
-
 struct YesNoView: View {
     let title: String
     let subtitle1: String
@@ -127,11 +54,6 @@ struct YesNoView: View {
     let showsDismissButton: Bool
     @Binding var shouldShowOnboarding: Bool
     @EnvironmentObject var userInfo : UserInfo
-    
-    
-    
-    
-    
     var body: some View{
         VStack{
             Spacer()
