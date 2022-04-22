@@ -10,6 +10,7 @@ import SwiftUI
 struct EnterView: View {
     var closedRange = Calendar.current.date(byAdding: . year, value: -1, to: Date())!
     @EnvironmentObject var migraineInfo : MigraineInfo
+    @EnvironmentObject var userInfo : UserInfo
     
     func formatDate() -> String{
         let components = Calendar.current.dateComponents([.hour, .minute, .day, .month, .year], from: migraineInfo.date)
@@ -64,28 +65,14 @@ struct EnterView: View {
                         }
                     }
                     Section(header: Text("Have You Been Keeping Up With Your Meals")){
-                        VStack{
-                            Button( action: {migraineInfo.hunger = true}, label:
-                                        {
-                                Text("Yes")
-                            }).frame(width: UIScreen.main.bounds.width-100, height: 30)
-                                .padding()
-                                .background(Color.buttonBackground)
-                                .foregroundColor(Color.buttonText)
-                                .cornerRadius(30)
-                                .padding(.bottom, 50 )
-                            Button( action: {migraineInfo.hunger = false}, label:
-                                        {
-                                Text("No")
-                            }).frame(width: UIScreen.main.bounds.width-100, height: 30)
-                                .padding()
-                                .background(Color.buttonBackground)
-                                .foregroundColor(Color.buttonText)
-                                .cornerRadius(30)
-                                .padding(.bottom, 50 )
-                            Text(String(migraineInfo.hunger))
-                        }
+                        Toggle("Yes", isOn: $migraineInfo.hunger)
                         
+                    }
+                    if (userInfo.gender == .Female){
+                        Section(header: Text("Have You Been Experiencing Period Cramps Recently")){
+                            Toggle("Yes", isOn: $migraineInfo.cramps)
+                            
+                        }
                     }
                     Section(){
                         Button( action: {}, label:
