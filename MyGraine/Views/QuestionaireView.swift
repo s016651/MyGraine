@@ -29,7 +29,7 @@ struct OnboardingView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View{
         ZStack{
-            Rectangle().background(Color.red).ignoresSafeArea(.all)
+          
           TabView{
                 WelcomeView()
                 NameView()

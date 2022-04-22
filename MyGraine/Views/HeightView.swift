@@ -10,6 +10,7 @@ import SwiftUI
 struct HeightView: View{
     @EnvironmentObject var userInfo : UserInfo
     var body : some View{
+        ZStack{
         VStack{
             HStack{
                 Text("Height")
@@ -30,8 +31,10 @@ struct HeightView: View{
                 Spacer()
             }
             
-        }
+        }.background(Color.red).ignoresSafeArea(.all)
         
+       
+        }
         
         .background(Color.backGroundColor)
         .ignoresSafeArea(.all)
