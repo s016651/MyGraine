@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 struct MyGraineApp: App {
     @StateObject var userInfo = UserInfo()
     @StateObject var migraineInfo = MigraineInfo()
+    @State var migraineList : [MigraineVariables] = []
+
     @UIApplicationDelegateAdaptor private var appDelegate : AppDelegate
     var body: some Scene {
         WindowGroup {

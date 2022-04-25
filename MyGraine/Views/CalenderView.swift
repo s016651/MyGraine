@@ -17,7 +17,7 @@ struct CalenderView: View {
     let layout = [
         GridItem(.adaptive(minimum: 30))
     ]
-    
+    var MigraineArray : [MigraineVariables] = []
     var body: some View {
         NavigationView{
             //January
