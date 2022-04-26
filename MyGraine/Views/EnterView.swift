@@ -75,7 +75,9 @@ struct EnterView: View {
                         }
                     }
                     Section(){
-                        Button( action: {}, label:
+                        Button( action: { userInfo.migraineList.append(migraineInfo)
+                            
+                        }, label:
                                     {
                             Text("Submit")
                         }).frame(width: UIScreen.main.bounds.width-100, height: 30)

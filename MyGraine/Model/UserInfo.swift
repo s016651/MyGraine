@@ -25,6 +25,7 @@ class UserInfo : ObservableObject {
     @Published var gender: Gender = .Male
     @Published var height : Int
     @Published var weight : Int
+    @Published var migraineList : [MigraineInfo] = []
     
     init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false, height: Int = 0, weight: Int = 0) {
         self.name = name
