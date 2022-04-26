@@ -11,9 +11,17 @@ struct LoginView: View {
     @EnvironmentObject var userInfo : UserInfo
     var body: some View {
         ZStack{
-            Rectangle().foregroundColor(Color.backGroundColor)
+            Rectangle().foregroundColor(Color.white)
                 .edgesIgnoringSafeArea(.all)
             VStack{
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                Text("Mygraine")
+                    .bold()
+                    .foregroundColor(Color.buttonBackground)
+                    .font(.largeTitle)
+                    .padding(100.0)
                 HStack{
                     Image(systemName: "mail")
                     TextField("Email", text: $userInfo.email)
@@ -40,7 +48,6 @@ struct LoginView: View {
                 .background(Color.buttonBackground)
                 .foregroundColor(Color.buttonText)
                 .cornerRadius(30)
-                Spacer()
                 
                 Button("Sign In"){
                     FirebaseFunctions.login(email: userInfo.email, password: userInfo.password)
