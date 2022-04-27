@@ -17,7 +17,8 @@ func formatDate(date : Date) -> String{
 }
 
 struct CalenderView: View {
-    @EnvironmentObject var migraineInfo : MigraineInfo
+    //@EnvironmentObject var migraineInfo : MigraineInfo
+    
     @EnvironmentObject var userInfo : UserInfo
     
     var body: some View {
@@ -25,7 +26,7 @@ struct CalenderView: View {
             Text("Migraine History")
                 .foregroundColor(Color.buttonBackground)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            List(userInfo.migraineList.indices){ index in
+            List(userInfo.migraineList.indices, id: \.self){ index in
                 VStack{
                     Text("Start Date : " + formatDate(date: userInfo.migraineList[index].date))
                         .foregroundColor(Color.buttonBackground)

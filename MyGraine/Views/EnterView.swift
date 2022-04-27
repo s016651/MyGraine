@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct EnterView: View {
+    
     var closedRange = Calendar.current.date(byAdding: . year, value: -1, to: Date())!
+    
     @EnvironmentObject var migraineInfo : MigraineInfo
     @EnvironmentObject var userInfo : UserInfo
+    
     var count : Int = -1
+   
     func formatDate() -> String{
         let components = Calendar.current.dateComponents([.hour, .minute, .day, .month, .year], from: migraineInfo.date)
         let hour = components.hour ?? 0
@@ -20,9 +24,9 @@ struct EnterView: View {
         let month = components.month ?? 0
         let year = components.year ?? 0
         
-        
         return "\(day)-\(month)-\(year) (\(hour):\(minute))"
     }
+    
     var body: some View {
         ZStack{
             Rectangle().foregroundColor(Color.backGroundColor)
@@ -75,10 +79,10 @@ struct EnterView: View {
                         }
                     }
                     Section(){
-                        Button( action: { userInfo.migraineList.append(migraineInfo)
+                        Button( action: {
+                            userInfo.migraineList.append(MigraineInfo(migraineInfo: migraineInfo))
                             
-                        }, label:
-                                    {
+                        }, label:{
                             Text("Submit")
                         }).frame(width: UIScreen.main.bounds.width-100, height: 30)
                             .padding()

@@ -15,6 +15,17 @@ class MigraineInfo : ObservableObject {
     @Published var duration : Date
     @Published var hunger : Bool = false
     @Published var cramps : Bool = false
+    
+    init(migraineInfo: MigraineInfo){
+        self.date = migraineInfo.date
+        self.stressLevel = migraineInfo.stressLevel
+        self.sleep = migraineInfo.sleep
+        self.hydration = migraineInfo.hydration
+        self.duration = migraineInfo.duration
+        self.hunger = migraineInfo.hunger
+        self.hunger = migraineInfo.cramps
+    }
+    
     init(date : Date = Date() , sleep : Float = 0.0 , hydration : Float = 0 , stressLevel: Float = 0.0,  duration : Date = Date()) {
         self.date = date
         self.stressLevel = stressLevel
@@ -23,5 +34,7 @@ class MigraineInfo : ObservableObject {
         self.duration = duration
         
     }
+    
+    
 }
 
