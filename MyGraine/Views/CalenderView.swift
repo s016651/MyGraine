@@ -26,7 +26,9 @@ struct CalenderView: View {
             Text("Migraine History")
                 .foregroundColor(Color.buttonBackground)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+           
             List(userInfo.migraineList.indices, id: \.self){ index in
+                
                 VStack{
                     Text("Start Date : " + formatDate(date: userInfo.migraineList[index].date))
                         .foregroundColor(Color.buttonBackground)
@@ -68,11 +70,26 @@ struct CalenderView: View {
                     
                     
                 }
+                
+                
+            }
+            NavigationView{
+                NavigationLink(destination: HistoryView(), label:{
+                    learnView()
+                })
             }
             
             
         }
         
+    }
+    struct learnView : View{
+        var body: some View {
+            Text("Learn More")
+                .foregroundColor(Color.buttonBackground)
+                .multilineTextAlignment(.leading)
+            
+        }
     }
     
     struct Calender_Previews: PreviewProvider {
