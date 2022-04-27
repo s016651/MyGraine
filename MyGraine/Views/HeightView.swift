@@ -7,37 +7,25 @@
 
 import SwiftUI
 
+func formatHeight() {
+    
+}
 struct HeightView: View{
     @EnvironmentObject var userInfo : UserInfo
     var body : some View{
-        ZStack{
         VStack{
+            Text("Please Enter Your Height")
+                .bold()
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.buttonBackground)
             HStack{
-                Text("Height")
-                    .bold()
-                    .font(.system(size: 42))
-                    .multilineTextAlignment(.leading)
-                
+                Text("\(Int(userInfo.height)/12)ft" + "\(Int(userInfo.height) - (Int(userInfo.height)/12)*12)in")
+                    .foregroundColor(Color.buttonBackground)
+                Slider(value: $userInfo.height , in: 48...84)
             }
-           
-            
-            HStack{
-                Text("Please Enter In Your Current Height In Inches:")
                 
-                
-                
-                
-                TextField("Height", value: $userInfo.height, formatter: NumberFormatter())
-                Spacer()
-            }
-            
-        }.background(Color.red).ignoresSafeArea(.all)
-        
-       
+                .background(Color.white)
+                .ignoresSafeArea(.all)
         }
-        
-        .background(Color.backGroundColor)
-        .ignoresSafeArea(.all)
     }
-    
 }

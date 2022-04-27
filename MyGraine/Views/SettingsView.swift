@@ -27,11 +27,25 @@ struct SettingsView: View {
                         .onChange(of: userInfo.name, perform: {_ in
                             FirebaseFunctions.addUserName(userInfo.name)
                         })
+                    
                         
                 }
                 .padding()
                 .padding(.top, 50)
                 
+                Toggle("Male - Female", isOn: $userInfo.gender)
+                    .foregroundColor(Color.buttonBackground)
+               
+                HStack{
+                    Text("\(Int(userInfo.height)/12)ft" + "\(Int(userInfo.height) - (Int(userInfo.height)/12)*12)in")
+                        .foregroundColor(Color.buttonBackground)
+                    Slider(value: $userInfo.height , in: 48...84)
+                }
+                HStack{
+                    Text("\(Int(userInfo.weight))lbs")
+                        .foregroundColor(Color.buttonBackground)
+                    Slider(value: $userInfo.weight , in: 0...250)
+                }
                 Button("Sign Out"){
                     FirebaseFunctions.signOut(userInfo)
                 }

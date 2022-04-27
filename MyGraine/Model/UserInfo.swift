@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-enum Gender: String,  Identifiable, CaseIterable{
-    case Male
-    case Female
-    
-    var id : String{self.rawValue}
-
-    
-}
 
 
 class UserInfo : ObservableObject {
@@ -22,12 +14,12 @@ class UserInfo : ObservableObject {
     var email : String
     var password : String
     @Published var loggedIn : Bool
-    @Published var gender: Gender = .Male
-    @Published var height : Int
-    @Published var weight : Int
+    @Published var gender: Bool = false
+    @Published var height : Float
+    @Published var weight : Float
     @Published var migraineList : [MigraineInfo] = []
     
-    init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false, height: Int = 0, weight: Int = 0) {
+    init(name : String = "" , email : String = "" , password : String = "", loggedIn : Bool = false, height: Float = 0, weight: Float = 0) {
         self.name = name
         self.email = email
         self.password = password

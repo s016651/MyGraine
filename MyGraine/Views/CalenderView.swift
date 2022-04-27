@@ -6,53 +6,77 @@
 //
 
 import SwiftUI
+import Foundation
+
+let dateFormatter = DateFormatter()
+
+
+func formatDate(date : Date) -> String{
+    dateFormatter.dateFormat = "MMM d, YYYY at hh:mm"
+    return dateFormatter.string(from: date)
+}
 
 struct CalenderView: View {
-    struct month{
-        let name : String
-        let numberOfDays : Int
-    }
-    let data = Array(1...31).map { " \($0)"}
-    let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    let layout = [
-        GridItem(.adaptive(minimum: 30))
-    ]
+    @EnvironmentObject var migraineInfo : MigraineInfo
+    @EnvironmentObject var userInfo : UserInfo
+    
     var body: some View {
-        NavigationView{
-            //January
-            ScrollView{
-                ForEach(0 ..< 12) { item in
-                    VStack{
-                        
-//                        Text(month[item])
-                        LazyVGrid(columns: layout, spacing: 20) {
-                            ForEach(data, id: \.self) { item in
-                                VStack{
-                                    NavigationLink( destination: EnterView(), label: {Text(item)})
-                                    
-                                    Capsule()
-                                        .fill(Color.blue)
-                                        .frame(height: 56)
-                                    
-                                    
-                                }
-                            }
-                        }
-                        .padding(.horizontal)
-                        
+        VStack{
+            Text("Migraine History")
+                .foregroundColor(Color.buttonBackground)
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            List(userInfo.migraineList.indices){ index in
+                VStack{
+                    Text("Start Date : " + formatDate(date: userInfo.migraineList[index].date))
+                        .foregroundColor(Color.buttonBackground)
+                        .multilineTextAlignment(.leading)
+                    Text("End date : " + formatDate(date: userInfo.migraineList[index].duration))
+                        .foregroundColor(Color.buttonBackground)
+                        .multilineTextAlignment(.leading)
+                    Text("Stress Level : \(Int(userInfo.migraineList[index].stressLevel))")
+                        .foregroundColor(Color.buttonBackground)
+                        .multilineTextAlignment(.leading)
+                    Text("Hours Slept : \(Int(userInfo.migraineList[index].sleep))")
+                        .foregroundColor(Color.buttonBackground)
+                        .multilineTextAlignment(.leading)
+                    Text("Water Drank in oz : \(Int(userInfo.migraineList[index].hydration))")
+                        .foregroundColor(Color.buttonBackground)
+                        .multilineTextAlignment(.leading)
+                    if userInfo.migraineList[index].hunger{
+                        Text("Have you been keeping up with meals : Yes" )
+                            .foregroundColor(Color.buttonBackground)
+                            .multilineTextAlignment(.leading)
                     }
+                    else{
+                        Text("Have you been keeping up with meals : No" )
+                            .foregroundColor(Color.buttonBackground)
+                            .multilineTextAlignment(.leading)
+                    }
+                    if userInfo.gender {
+                        if userInfo.migraineList[index].cramps {
+                            Text("Period Cramps Recently : Yes")
+                                .foregroundColor(Color.buttonBackground)
+                                .multilineTextAlignment(.leading)
+                        }
+                        else{
+                            Text("Period Cramps Recently : No")
+                                .foregroundColor(Color.buttonBackground)
+                                .multilineTextAlignment(.leading)
+                        }
+                    }
+                    
+                    
                 }
             }
             
             
         }
         
-        
     }
-
-struct Calender_Previews: PreviewProvider {
-    static var previews: some View {
-        CalenderView()
+    
+    struct Calender_Previews: PreviewProvider {
+        static var previews: some View {
+            CalenderView()
+        }
     }
-}
 }

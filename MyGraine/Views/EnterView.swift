@@ -29,7 +29,7 @@ struct EnterView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 Text("New Migraine")
-                    .foregroundColor(Color.buttonText)
+                    .foregroundColor(Color.buttonBackground)
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Spacer()
                 
@@ -68,7 +68,7 @@ struct EnterView: View {
                         Toggle("Yes", isOn: $migraineInfo.hunger)
                         
                     }
-                    if (userInfo.gender == .Female){
+                    if (userInfo.gender){
                         Section(header: Text("Have You Been Experiencing Period Cramps Recently")){
                             Toggle("Yes", isOn: $migraineInfo.cramps)
                             

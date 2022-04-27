@@ -10,11 +10,15 @@ import SwiftUI
 struct GenderView: View{
     @EnvironmentObject var userInfo : UserInfo
     var body : some View{
+        VStack{
+            Text("Please Enter your Gender")
+            .bold()
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color.buttonBackground)
+            .font(.system(size: 30))
+            Toggle("Male - Female", isOn: $userInfo.gender)                    .foregroundColor(Color.buttonBackground)
+        }
+
         
-        Picker(selection: $userInfo.gender, label: Text("Gender"), content: {
-            ForEach(Gender.allCases){ ti in
-                Text(ti.rawValue)
-            }
-        })
     }
 }
