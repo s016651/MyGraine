@@ -20,6 +20,7 @@ struct HistoryView: View {
                     VStack{
                         List(textfilesbasic.indices){ index in
                             Text(textfilesbasic[index])
+                                .foregroundColor(Color.buttonBackground)
                             
                         }
 
